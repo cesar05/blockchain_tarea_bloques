@@ -1,0 +1,8 @@
+
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(й∆И‘8Ч«ц№Е.
+Msquid:S1481"/Remove this unused "hashBlock3" local variable.(°єж≈8Оџр№Е.
+Л"squid:ClassVariableVisibilityCheck"QMake nonce a static final constant or non-public and provide accessors if needed.(€гµ«ь€€€€8ЉќшЏЕ.
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(й∆И‘8√ли№Е.
+\squid:S1854">Remove this useless assignment to local variable "hashBlock3".(°єж≈8Оџр№Е.
