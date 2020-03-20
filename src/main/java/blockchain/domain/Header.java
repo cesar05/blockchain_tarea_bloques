@@ -1,13 +1,20 @@
-package blockchain.modelo;
+package blockchain.domain;
 
 public class Header {
     private String hashPrev;
     private String hashRoot;
+    private String hashOwn;
     private Long nonce;
 
     public Header(String hashPrev, String hashRoot) {
         this.hashPrev = hashPrev;
         this.hashRoot = hashRoot;
+    }
+
+    public Header(String hashPrev, String hashRoot, String hashOwn) {
+        this.hashPrev = hashPrev;
+        this.hashRoot = hashRoot;
+        this.hashOwn = hashOwn;
     }
 
     public String getHashPrev() {
@@ -32,6 +39,14 @@ public class Header {
 
     public void setNonce(Long nonce) {
         this.nonce = nonce;
+    }
+
+    public String getHashOwn() {
+        return hashOwn;
+    }
+
+    public void setHashOwn(String hashOwn) {
+        this.hashOwn = hashOwn;
     }
 
     @Override

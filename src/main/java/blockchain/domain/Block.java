@@ -1,11 +1,19 @@
-package blockchain.modelo;
+package blockchain.domain;
 
 public class Block {
+    private String id;
     private Header header;
     private Body body;
     private Block blockPrev;
 
     public Block(Header header, Body body, Block blockPrev) {
+        this.header = header;
+        this.body = body;
+        this.blockPrev = blockPrev;
+    }
+
+    public Block(String id, Header header, Body body, Block blockPrev) {
+        this.id = id;
         this.header = header;
         this.body = body;
         this.blockPrev = blockPrev;
@@ -33,6 +41,10 @@ public class Block {
 
     public void setBlockPrev(Block blockPrev) {
         this.blockPrev = blockPrev;
+    }
+
+    public String getId() {
+        return id;
     }
 
     @Override
